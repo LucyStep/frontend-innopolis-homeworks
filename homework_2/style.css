@@ -47,7 +47,7 @@ footer {
 .card-inner-container {
 	display: flex;
 	flex-direction: column;
-	width: 280px;
+	width: calc(25% - 10px);
 	margin: 5px;
 	text-align: center;
 	border: 2px solid #d9aeae;
@@ -63,21 +63,18 @@ footer {
 	margin-bottom: 40px;
 }
 .card-name {
-	height: 40px;
 	color: #662626;
 	padding: 0 10px;
 	font-size: 15px;
 	margin-bottom: 15px;
 }
 .card-description {
-	height: 90px;
 	margin-bottom: 15px;
 	padding: 0 10px;
 	line-height: 1.5;
 	color: #757575;
 }
 .price {
-	height: 20px;
 	font-size: 20px;
 	color: #fc5a5a;
 }
