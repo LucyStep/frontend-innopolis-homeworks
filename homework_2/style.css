@@ -13,11 +13,11 @@ h1 {
 }
 button {
 	padding: 15px 30px;
-	margin-top: auto;
 	color: white;
 	font-size: 20px;
 	border: none;
 	background-color: #dd6060;
+	width: 100%;
 }
 footer {
 	margin: 40px auto 30px;
@@ -53,26 +53,34 @@ footer {
 	border: 2px solid #d9aeae;
 	background-color: white;
 }
-.card-inner-container img {
-	display: block;
-	width: 100%;
+.card-preview {
 	margin-bottom: 15px;
 }
+.card-preview img {
+	width: 100%;
+}
+.card-content {
+	margin-bottom: 40px;
+}
 .card-name {
+	height: 40px;
 	color: #662626;
-	height: 60px;
 	padding: 0 10px;
 	font-size: 15px;
+	margin-bottom: 15px;
 }
 .card-description {
 	height: 90px;
+	margin-bottom: 15px;
 	padding: 0 10px;
-	font-size: 16px;
 	line-height: 1.5;
 	color: #757575;
 }
 .price {
-	height: 70px;
+	height: 20px;
 	font-size: 20px;
 	color: #fc5a5a;
+}
+.card-button {
+	margin-top: auto;
 }
