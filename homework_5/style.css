@@ -29,6 +29,8 @@ body {
   font-weight: bold;
   color: #787878;
   padding-top: 12px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .form__title {
@@ -39,7 +41,7 @@ body {
 .form__label {
   font-size: 16px;
   align-self: flex-start;
-  padding-left: 53px;
+  padding-left: 10px;
   margin-bottom: 3px;
 }
 
@@ -49,7 +51,7 @@ body {
   width: 509px;
   height: 49px;
   padding-left: 15px;
-  margin: 0 45px 10px;
+  margin-bottom: 10px;
   font-size: 28px;
   font-weight: bold;
   color: #787878;
@@ -85,11 +87,15 @@ body {
   height: 24px;
   border: 2px solid #787878;
   border-radius: 7px;
-  margin-left: 45px;
 }
 
-.form__checkbox:checked + .form__checkbox-mark {
-  background: #1B2473;
+.form__checkbox-wrapper > .form__checkbox:checked + .form__checkbox-mark::after {
+  content: '✓';
+	position: absolute;
+  z-index: 3;
+	color: #787878;
+	top: 10px;
+	left: 5px;
 }
 
 .form__checkbox-label {
@@ -113,7 +119,7 @@ body {
 }
 
 .form__button:hover {
-  opacity: 0.9;
+  background-color: rgba(26,34,107, 0.7);
 }
 
 .form__button:focus {
@@ -141,7 +147,7 @@ body {
   }
 
   .form__input {
-    width: 87%;
+    width: 100%;
   }
 
   .form__checkbox-mark {
@@ -151,6 +157,11 @@ body {
 
   .form__checkbox-label {
     font-size: 18px;
+  }
+
+  .form__checkbox-wrapper > .form__checkbox:checked + .form__checkbox-mark::after {
+    top: 13px;
+	  left: 10px;
   }
 
   .form__button {
