@@ -91,11 +91,11 @@ body {
 
 .form__checkbox-wrapper > .form__checkbox:checked + .form__checkbox-mark::after {
   content: '✓';
-	position: absolute;
+  position: absolute;
   z-index: 3;
-	color: #787878;
-	top: 10px;
-	left: 5px;
+  color: #787878;
+  top: 10px;
+  left: 5px;
 }
 
 .form__checkbox-label {
@@ -161,7 +161,7 @@ body {
 
   .form__checkbox-wrapper > .form__checkbox:checked + .form__checkbox-mark::after {
     top: 13px;
-	  left: 10px;
+    left: 10px;
   }
 
   .form__button {
