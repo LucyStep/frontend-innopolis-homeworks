@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #1B2473;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 82px;
+}
+
+.form {
+  width: 600px;
+  height: 412px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #787878;
+  padding-top: 12px;
+}
+
+.form__title {
+  font-size: 50px;
+  margin: 0;
+}
+
+.form__label {
+  font-size: 16px;
+  align-self: flex-start;
+  padding-left: 53px;
+  margin-bottom: 3px;
+}
+
+.form__input {
+  border-radius: 10px;
+  border: 2px solid #787878;
+  width: 509px;
+  height: 49px;
+  padding-left: 15px;
+  margin: 0 45px 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #787878;
+}
+
+.form__input::placeholder {
+  color: #ccc;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form__checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 56px;
+}
+
+.form__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.form__checkbox-mark {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #787878;
+  border-radius: 7px;
+  margin-left: 45px;
+}
+
+.form__checkbox:checked + .form__checkbox-mark {
+  background: #1B2473;
+}
+
+.form__checkbox-label {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: normal;
+  padding: 0 10px;
+}
+
+.form__button {
+  border: none;
+  border-radius: 10px;
+  background: #1A226B;
+  width: 180px;
+  height: 52px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 26px;
+  line-height: 52px;
+}
+
+.form__button:hover {
+  opacity: 0.9;
+}
+
+.form__button:focus {
+  outline: none;
+  border: 2px solid #acacac;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .container {
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+    height: 100%;
+    min-height: 410px;
+  }
+
+  .form__title {
+    font-size: 60px;
+  }
+
+  .form__label {
+    font-size: 24px;
+  }
+
+  .form__input {
+    width: 87%;
+  }
+
+  .form__checkbox-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .form__checkbox-label {
+    font-size: 18px;
+  }
+
+  .form__button {
+    font-size: 32px;
+    width: 220px;
+    height: 80px;
+  }
+}
