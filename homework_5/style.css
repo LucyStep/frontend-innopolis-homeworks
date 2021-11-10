@@ -80,6 +80,7 @@ body {
   top: 0;
   left: 0;
   margin: 0;
+  z-index: 2;
 }
 
 .form__checkbox-mark {
@@ -93,7 +94,7 @@ body {
 .form__checkbox-wrapper > .form__checkbox:checked + .form__checkbox-mark::after {
   content: '✓';
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   color: #787878;
   top: 10px;
   left: 5px;
