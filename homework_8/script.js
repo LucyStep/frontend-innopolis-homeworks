@@ -1,10 +1,10 @@
 'use strict';
 
-const fibonacci = (function () {
+const fibonacci = (function makeFibonacciFunction() {
   let a = 0;
   let b = 1;
 
-  return function () {
+  return function count() {
     console.log(b);
     const c = a + b;
     a = b;
