@@ -1,10 +1,33 @@
 'use strict';
 
-const fibonacci = (function makeFibonacciFunction() {
+// Без звёздочки
+
+function makeFibonacciFunction1() {
   let a = 0;
   let b = 1;
 
-  return function count() {
+  return function() {
+    console.log(b);
+    const c = a + b;
+    a = b;
+    b = c;
+  }
+}
+const fibonacci1 = makeFibonacciFunction1();
+
+fibonacci1();
+fibonacci1();
+fibonacci1();
+fibonacci1();
+fibonacci1();
+
+// * Со звёздочкой
+
+const fibonacci2 = (function makeFibonacciFunction2() {
+  let a = 0;
+  let b = 1;
+
+  return function() {
     console.log(b);
     const c = a + b;
     a = b;
@@ -12,8 +35,8 @@ const fibonacci = (function makeFibonacciFunction() {
   }
 })();
 
-fibonacci();
-fibonacci();
-fibonacci();
-fibonacci();
-fibonacci();
+fibonacci2();
+fibonacci2();
+fibonacci2();
+fibonacci2();
+fibonacci2();
