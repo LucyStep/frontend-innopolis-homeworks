@@ -3,14 +3,14 @@
 // Без звёздочки
 
 function makeFibonacciFunction1() {
-  let a = 0;
-  let b = 1;
+  let prev = 0;
+  let next = 1;
 
   return function() {
-    console.log(b);
-    const c = a + b;
-    a = b;
-    b = c;
+    console.log(next);
+    const fibSum = prev + next;
+    prev = next;
+    next = fibSum;
   }
 }
 const fibonacci1 = makeFibonacciFunction1();
@@ -24,14 +24,14 @@ fibonacci1();
 // * Со звёздочкой
 
 const fibonacci2 = (function makeFibonacciFunction2() {
-  let a = 0;
-  let b = 1;
+  let prev = 0;
+  let next = 1;
 
   return function() {
-    console.log(b);
-    const c = a + b;
-    a = b;
-    b = c;
+    console.log(next);
+    const fibSum = prev + next;
+    prev = next;
+    next = fibSum;
   }
 })();
 
