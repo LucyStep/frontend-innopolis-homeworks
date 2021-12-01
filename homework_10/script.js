@@ -53,6 +53,9 @@ const emailValidation = () => {
       userCredentials.email = emailInput.value;
     } else {
       noEmail.textContent = 'Email невалидный';
+      noEmail.style.display = 'block';
+      emailInput.classList.add('invalid-input');
+      emailLabel.classList.add('invalid-text');
     }
   }
 
