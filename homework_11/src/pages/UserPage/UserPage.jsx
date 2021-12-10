@@ -1,4 +1,3 @@
-import React from 'react';
 import './UserPage.css';
 import {Link, useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
@@ -32,9 +31,7 @@ function UserPage() {
       </Link>
     </div>
   );
-
 }
-
 
 export default UserPage;
 
