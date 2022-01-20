@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход в личный кабинет</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form class="form" method="POST">
+      <h1 class="form__title">Вход</h1>
+      <label class="form__label" for="input-email">Email</label>
+      <input class="form__input" type="email" placeholder="Введите email" id="input-email" required>
+      <label class="form__label" for="input-password">Пароль</label>
+      <input class="form__input" type="password" placeholder="Введите пароль" id="input-password" required>
+      <div class="form__checkbox-wrapper">
+        <input class="form__checkbox" type="checkbox" id="input-checkbox">
+        <div class="form__checkbox-mark"></div>
+        <label class="form__checkbox-label" for="input-checkbox">Я согласен получать обновления на почту</label>
+      </div>
+      <button class="form__button" type="submit">Войти</button>
+    </form>
+  </div>
+</body>
+</html>
